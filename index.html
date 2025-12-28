@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediScript Pro - Medical Research Writing Services</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#f97316',
+                        accent: '#0ea5e9'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <custom-header></custom-header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-primary to-accent text-white py-20">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Professional Medical Research Writing Services</h1>
+                    <p class="text-xl mb-8">Trusted by medical professionals worldwide for high-quality research papers, theses, and academic documents.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#services" class="bg-secondary hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300">Explore Services</a>
+                        <a href="#contact" class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg text-center transition duration-300">Get Free Quote</a>
+                    </div>
+                </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="bg-white rounded-xl p-6 shadow-2xl w-full max-w-md">
+                            <h2 class="text-2xl font-bold text-primary mb-4">Quick Inquiry</h2>
+                            <form id="inquiryForm" class="space-y-4">
+                                <div>
+                                    <label for="service" class="block text-gray-700 mb-2">Service Required</label>
+                                    <select id="service" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                        <option>Select a service</option>
+                                        <option>Thesis Writing</option>
+                                        <option>Dissertation Writing</option>
+                                        <option>Synopsis Creation</option>
+                                        <option>Review Papers</option>
+                                        <option>Research Papers</option>
+                                        <option>PowerPoint Presentations</option>
+                                        <option>Plagiarism Removal</option>
+                                        <option>AI Detection</option>
+                                        <option>Proposals</option>
+                                        <option>Protocols</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="your@email.com">
+                                </div>
+                                <div>
+                                    <label for="deadline" class="block text-gray-700 mb-2">Deadline</label>
+                                    <input type="date" id="deadline" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                                <button type="submit" class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-3 rounded-lg transition duration-300">Get Quote</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+</section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Medical Writing Services</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive academic support tailored for medical professionals and researchers</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                            <i data-feather="book-open" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Thesis Writing</h3>
+                        <p class="text-gray-600 mb-4">End-to-end thesis development including topic selection, literature review, methodology, analysis, and final draft.</p>
+                        <a href="#" class="text-secondary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                            <i data-feather="file-text" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Dissertation Writing</h3>
+                        <p class="text-gray-600 mb-4">Full dissertation support for medical and health science PhD/MD programs with structured chapters and revisions.</p>
+                        <a href="#" class="text-secondary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                            <i data-feather="clipboard" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Synopsis Creation</h3>
+                        <p class="text-gray-600 mb-4">Concise research proposal/synopsis for approvals, including objectives, methodology, and outcomes.</p>
+                        <a href="#" class="text-secondary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                    </div>
+                    
+                    <!-- Service 4 -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                            <i data-feather="search" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Review Papers</h3>
+                        <p class="text-gray-600 mb-4">Systematic and narrative reviews with PRISMA flow, meta-analysis support (optional), and referencing.</p>
+                        <a href="#" class="text-secondary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                    </div>
+                    
+                    <!-- Service 5 -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                            <i data-feather="edit" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Research Papers</h3>
+                        <p class="text-gray-600 mb-4">Original research articles formatted as per journal guidelines (IMRAD structure).</p>
+                        <a href="#" class="text-secondary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                    </div>
+                    
+                    <!-- Service 6 -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                            <i data-feather="monitor" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">PowerPoint Presentations</h3>
+                        <p class="text-gray-600 mb-4">Academic and conference-ready slides with medical visuals, charts, and speaker notes.</p>
+                        <a href="#" class="text-secondary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                    </div>
+                    
+                    <!-- Service 7 -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                            <i data-feather="shield" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Plagiarism Removal</h3>
+                        <p class="text-gray-600 mb-4">Rewriting and paraphrasing to reduce similarity while preserving scientific accuracy.</p>
+                        <a href="#" class="text-secondary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                    </div>
+                    
+                    <!-- Service 8 -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                            <i data-feather="cpu" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">AI Detection</h3>
+                        <p class="text-gray-600 mb-4">Humanization and refinement of AI-generated content to pass AI detection tools.</p>
+                        <a href="#" class="text-secondary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                    </div>
+                    
+                    <!-- Service 9 -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                            <i data-feather="briefcase" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Proposals</h3>
+                        <p class="text-gray-600 mb-4">Grant and research proposals with background, objectives, budget outline, and methodology.</p>
+                        <a href="#" class="text-secondary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                    </div>
+                    
+                    <!-- Service 10 -->
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                            <i data-feather="file" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Protocols</h3>
+                        <p class="text-gray-600 mb-4">Clinical/research protocols following ICMR, WHO, or institutional guidelines.</p>
+                        <a href="#" class="text-secondary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+                    </div>
+</div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">How It Works</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Simple process to get your medical research documents professionally written</p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-center mb-10 md:mb-0">
+                        <div class="w-20 h-20 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Submit Request</h3>
+                        <p class="text-gray-600 max-w-xs">Fill out our simple form with your requirements and deadline</p>
+                    </div>
+                    
+                    <div class="hidden md:block">
+                        <i data-feather="arrow-right" class="text-gray-400 w-8 h-8"></i>
+                    </div>
+                    
+                    <div class="text-center mb-10 md:mb-0">
+                        <div class="w-20 h-20 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Get Quote</h3>
+                        <p class="text-gray-600 max-w-xs">Receive a personalized quote within 24 hours</p>
+                    </div>
+                    
+                    <div class="hidden md:block">
+                        <i data-feather="arrow-right" class="text-gray-400 w-8 h-8"></i>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Receive Document</h3>
+                        <p class="text-gray-600 max-w-xs">Get your professionally written document on time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">What Our Clients Say</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Trusted by medical professionals worldwide</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">"MediScript Pro helped me complete my PhD dissertation in record time. Their attention to medical accuracy is unmatched."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                            <div>
+                                <h4 class="font-bold">Dr. Sarah Johnson</h4>
+                                <p class="text-gray-500">Cardiology Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">"The plagiarism removal service saved my research paper. They maintained the scientific integrity while making it completely original."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                            <div>
+                                <h4 class="font-bold">Michael Chen</h4>
+                                <p class="text-gray-500">Medical Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                                <i data-feather="star" class="fill-current"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">"Their presentation design service helped me win the best poster award at the international medical conference."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                            <div>
+                                <h4 class="font-bold">Dr. Emily Rodriguez</h4>
+                                <p class="text-gray-500">Public Health Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-r from-primary to-accent text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of medical professionals who trust us with their research writing needs.</p>
+                <a href="#contact" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-block">Get Your Free Quote Now</a>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Contact Us</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Have questions? Our team is here to help you 24/7</p>
+                </div>
+                
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-1/2">
+                        <form class="bg-white p-8 rounded-xl shadow-md">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                                <div>
+                                    <label for="emailContact" class="block text-gray-700 mb-2">Email</label>
+                                    <input type="email" id="emailContact" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-3 rounded-lg transition duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="lg:w-1/2">
+                        <div class="bg-white p-8 rounded-xl shadow-md h-full">
+                            <h3 class="text-2xl font-bold text-primary mb-6">Get in Touch</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i data-feather="mail" class="text-primary w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1">Email Us</h4>
+                                        <p class="text-gray-600">contact@mediscriptpro.com</p>
+                                        <p class="text-gray-600">support@mediscriptpro.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i data-feather="phone" class="text-primary w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1">Call Us</h4>
+                                        <p class="text-gray-600">+1 (555) 123-4567</p>
+                                        <p class="text-gray-600">+1 (555) 987-6543</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i data-feather="clock" class="text-primary w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1">Working Hours</h4>
+                                        <p class="text-gray-600">Monday - Friday: 9AM - 6PM</p>
+                                        <p class="text-gray-600">Saturday: 10AM - 4PM</p>
+                                        <p class="text-gray-600">Sunday: Closed</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i data-feather="map-pin" class="text-primary w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1">Our Location</h4>
+                                        <p class="text-gray-600">123 Medical Plaza, Suite 100</p>
+                                        <p class="text-gray-600">Healthcare District, CA 90210</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>

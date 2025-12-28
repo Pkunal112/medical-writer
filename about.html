@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MediScript Pro</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#f97316',
+                        accent: '#0ea5e9'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <custom-header></custom-header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-primary to-accent text-white py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">About MediScript Pro</h1>
+                <p class="text-xl max-w-3xl mx-auto">Empowering medical professionals with expert research writing services</p>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl font-bold text-primary mb-6">Our Mission</h2>
+                        <p class="text-gray-600 mb-6 text-lg">At MediScript Pro, we are dedicated to supporting medical professionals, researchers, and students in their academic and professional journeys by providing high-quality, ethical, and reliable research writing services.</p>
+                        <p class="text-gray-600 mb-6 text-lg">Our mission is to bridge the gap between complex medical research and clear, impactful academic communication, ensuring that valuable research reaches its full potential.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="bg-blue-50 px-4 py-2 rounded-lg">
+                                <span class="font-bold text-primary">10+</span> Years Experience
+                            </div>
+                            <div class="bg-blue-50 px-4 py-2 rounded-lg">
+                                <span class="font-bold text-primary">5000+</span> Projects Completed
+                            </div>
+                            <div class="bg-blue-50 px-4 py-2 rounded-lg">
+                                <span class="font-bold text-primary">98%</span> Client Satisfaction
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96 flex items-center justify-center text-gray-500">
+                            Our Team Image
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+                    <h2 class="text-3xl font-bold text-primary mb-6 text-center">Why Choose Us</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+                                <i data-feather="user" class="text-primary w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Medical Experts</h3>
+                            <p class="text-gray-600">Our writers are medical professionals with advanced degrees and real-world experience.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+                                <i data-feather="shield" class="text-primary w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">100% Confidential</h3>
+                            <p class="text-gray-600">We maintain strict confidentiality and never share your personal or project details.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+                                <i data-feather="check-circle" class="text-primary w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Plagiarism-Free</h3>
+                            <p class="text-gray-600">All work is original and checked with advanced plagiarism detection tools.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+                                <i data-feather="rotate-cw" class="text-primary w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Unlimited Revisions</h3>
+                            <p class="text-gray-600">We offer unlimited revisions until you're completely satisfied with the work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Expert Team</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Meet the professionals behind MediScript Pro's success</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-32 h-32 mx-auto mb-4"></div>
+                        <h3 class="text-xl font-bold mb-1">Dr. Sarah Johnson</h3>
+                        <p class="text-secondary mb-2">Chief Medical Editor</p>
+                        <p class="text-gray-600 text-sm">PhD in Medical Sciences, 15+ years in academic publishing</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-32 h-32 mx-auto mb-4"></div>
+                        <h3 class="text-xl font-bold mb-1">Dr. Michael Chen</h3>
+                        <p class="text-secondary mb-2">Research Director</p>
+                        <p class="text-gray-600 text-sm">MD, PhD in Biostatistics, 12+ years in clinical research</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-32 h-32 mx-auto mb-4"></div>
+                        <h3 class="text-xl font-bold mb-1">Dr. Emily Rodriguez</h3>
+                        <p class="text-secondary mb-2">Head of Writing Services</p>
+                        <p class="text-gray-600 text-sm">PhD in Public Health, 10+ years in academic writing</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md text-center">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-32 h-32 mx-auto mb-4"></div>
+                        <h3 class="text-xl font-bold mb-1">James Wilson</h3>
+                        <p class="text-secondary mb-2">Quality Assurance Lead</p>
+                        <p class="text-gray-600 text-sm">MA in Medical Ethics, 8+ years in research compliance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

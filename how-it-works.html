@@ -1,0 +1,129 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - MediScript Pro</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#f97316',
+                        accent: '#0ea5e9'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <custom-header></custom-header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-primary to-accent text-white py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">How It Works</h1>
+                <p class="text-xl max-w-3xl mx-auto">Simple process to get your medical research documents professionally written</p>
+            </div>
+        </section>
+
+        <!-- Process Steps -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-20">
+                    <div class="text-center mb-10 md:mb-0 w-full md:w-1/3">
+                        <div class="w-20 h-20 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Submit Request</h3>
+                        <p class="text-gray-600">Fill out our simple form with your requirements and deadline</p>
+                    </div>
+                    
+                    <div class="hidden md:block">
+                        <i data-feather="arrow-right" class="text-gray-400 w-8 h-8"></i>
+                    </div>
+                    
+                    <div class="text-center mb-10 md:mb-0 w-full md:w-1/3">
+                        <div class="w-20 h-20 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Get Quote</h3>
+                        <p class="text-gray-600">Receive a personalized quote within 24 hours</p>
+                    </div>
+                    
+                    <div class="hidden md:block">
+                        <i data-feather="arrow-right" class="text-gray-400 w-8 h-8"></i>
+                    </div>
+                    
+                    <div class="text-center w-full md:w-1/3">
+                        <div class="w-20 h-20 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Receive Document</h3>
+                        <p class="text-gray-600">Get your professionally written document on time</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+                    <h2 class="text-3xl font-bold text-primary mb-6 text-center">Detailed Process</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Step 1: Submit Your Request</h3>
+                            <p class="text-gray-600 mb-4">Begin by filling out our detailed order form. Provide information about your project including:</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>Type of service required</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>Subject area and specialization</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>Specific requirements and guidelines</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>Deadline and urgency level</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>Any reference materials or drafts</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Step 2: Expert Assignment</h3>
+                            <p class="text-gray-600 mb-4">Once we receive your request, our team:</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>Reviews your requirements carefully</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>Assigns the most qualified medical expert</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span>Sends confirmation with timeline</span>
+                                </li>
+                            </ul>
+                            <h3 class="text-2xl font-bold mb-4">Step 3: Writing & Quality Check</h3>
+                            <p class="text-gray-600 mb-4">Our process ensures excellence:</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+
+___METADATA_START___
+{"isNew":true,"userName":"kunal3369"}
+___METADATA_END___
